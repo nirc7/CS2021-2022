@@ -8,7 +8,7 @@ export default function FCPersonsData(props) {
         <span
           style={{ margin: 5 }}
           onClick={() => props.deletePerson(props.id)}>
-          <PersonRemoveOutlinedIcon oncli color='warning' />
+          <PersonRemoveOutlinedIcon color='warning' />
         </span>
       </div>
 

@@ -3,6 +3,7 @@ import './App.css';
 import { Component } from 'react';
 import FCPersonsList from './FuncComps/FCPersonsList';
 import FCInputName from './FuncComps/FCInputName';
+import FCHPerson from './FuncComps/FCHPerson';
 
 const listPersons = [{ id: 1, name: 'avi' }, { id: 2, name: 'bennet' }, { id: 3, name: 'charlie' }];
 
@@ -37,6 +38,7 @@ export default class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <FCHPerson />
           <FCInputName sendName={this.getName} />
           <FCPersonsList sendID={this.peronsId2Delete} persons={this.state.persons} />
         </header>
