@@ -26,7 +26,7 @@ export default class SyncDemo extends Component {
 
 
         <ul>
-          <a href="#" data-userid={user.id} onClick={()=>this.btnX(7)}>X</a>
+          <a href="#" onClick={()=>this.btnX(7)}>X</a>
           <a href="#" data-userid={7} onClick={this.btnX}>X</a>
         </ul>
       </div>
